@@ -34,7 +34,9 @@ $select -> limit(1, 0);
 $sql = $select -> __toString();
 $result = $db -> fetchAll($sql);
 print_r($result);
-var_dump($result);
+var_dump($result);//显示数据结构
+//error_log($result);
+//var_export();
 
 // 对于以上任一种方式，都可以传递$select对象本身
 // 使用Zend_Db_Select对象的__toString()可以得到查询语句
